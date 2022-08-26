@@ -1,33 +1,32 @@
-import './estilos.css';
+import NavBar from './components/NavBar';
+import React from "react";
 
 function App() {
-  let imagen="hamburguesa.png";
-  let titulo="Big Mac";
-  let calorias="505 kcal";
-  let descripcion=`Quizás sean las dos hamburguesas de carne 100% 
-      vacuna con esa salsa especial y queso derretido, el toque de 
-      cebolla y la frescura de la lechuga o el crocante del pepino, 
-      lo que la hace la hamburguesa más famosa del mundo. Un sabor único.`;  
+   let imagen="vino01.png";
+  let titulo="NIETO SENETINER";
+  let subtitulo="PATRIMONIAL BONARDA 750 cc";
+  let descripcion=`Vino aristocrático, de color rojo cardenal profundo.
+  A la nariz se destacan las notas de frutales como frutos rojos como la 
+  frambuesa y la cereza, entremezclado con los aromas de chocolate y café entregado por la madera.`;   
+  let precio="$ 1860.00"
 
-  const producto ={id:1,image:imagen,title:titulo,calories:calorias,description:descripcion}
+  const producto ={id:1,image:imagen,title:titulo,subtitle:subtitulo,description:descripcion,price:precio}
   return (
-    <div className="container">
-      <div className='row'>
+    <div className='container-fluid '>
+      <NavBar/>
+      <hr />     
+     <div className='row'>
         <div className="col-md-4 offset-md-2">
         <img src={producto.image} alt={producto.title} className="img-fluid" />
         </div>
         <div className="col-md-4">
         <h1>{producto.title}</h1>
-        <p>{producto.calories}</p>
+        <h3>{producto.subtitle}</h3>
+        <h2>{producto.price}</h2>
         <p>{producto.description}</p>
-        </div>
-        
-  
-       
-      </div>
 
-
-       <h1>{}</h1>
+        </div>     
+      </div>   
     </div>
   );
 }
