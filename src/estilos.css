@@ -1,14 +1,25 @@
-.cabecera{
-  background-color:darkslategrey; 
+.cabecera {
+  background-color: darkslategrey;
 
 }
+
 h1 {
   font-family: "Times New Roman", Times, serif;
-  
+  text-align: center;
 }
-.color-link{
-  color:aliceblue;
+
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.color-link {
+  color: aliceblue;
   font-family: "Times New Roman", Times, serif;
   font-size: 120%;
-  
+
+}
+
+.card-item {
+  width: 15rem;
 }
