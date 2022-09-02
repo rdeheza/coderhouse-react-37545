@@ -14,6 +14,8 @@ const onAdd = () => {
     setCount(count-1 )
   } 
 
+
+  
     return (
         <div>
             <div class="shadow-lg p-3 mb-5 bg-white rounded card-item ">
