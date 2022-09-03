@@ -14,6 +14,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
     return (
         <div className="card text-center border-primary mb-3 card-item"  >
         <div className="container margin auto ">
+            <h4>Stock : {stock}</h4>
             <br />
             <div className="row">
                 <div className="col md-1 ">
