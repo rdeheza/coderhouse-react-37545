@@ -5,11 +5,11 @@ import "../estilos.css"
 const ItemCatalogo = (props) => {
 const [ count, setCount ] = useState(0)
 
-const onAdd = () => {
+const Agregar = () => {
     if (count<props.stock)
         setCount(count+1 )
   } 
-  const onRemove = () => {
+  const Restar = () => {
     if (count>0)
     setCount(count-1 )
   } 
@@ -26,13 +26,13 @@ const onAdd = () => {
                     <h4>Stock: {props.stock}</h4>
                     <div className="row">
                         <div className="col md-1">
-                           <button type="button" class="btn btn-success"  onClick={onAdd}>+</button>
+                           <button type="button" class="btn btn-success"  onClick={Agregar}>+</button>
                         </div>
                         <div className="col md-1">
                            <h5>{count}</h5>
                         </div>
                          <div className="col md-1">
-                            <button type="button" class="btn btn-danger" onClick={onRemove}>-</button>
+                            <button type="button" class="btn btn-danger" onClick={Restar}>-</button>
                           </div>
 
                     </div>

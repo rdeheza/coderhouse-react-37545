@@ -18,7 +18,9 @@ function App() {
 
 
       <hr />
-      <ItemListContainer />
+      <div className="col-md-3 offset-md-2">
+         <ItemListContainer />
+      </div>
       {/*      <div className='row'>
         <div className="col-md-4 offset-md-2">
         <img src={producto.image} alt={producto.title} className="img-fluid" />
