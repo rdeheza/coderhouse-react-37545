@@ -17,7 +17,7 @@ function App() {
       <NavBar />
 
 
-      <hr />
+     <hr /> 
       <div className="col-md-3 offset-md-2">
          <ItemListContainer />
       </div>

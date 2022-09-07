@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../estilos.css"
+import "../estilos.css";
+
 
 
 const ItemCount = ({stock,initial,onAdd}) => {
