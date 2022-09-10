@@ -1,7 +1,7 @@
 import NavBar from './components/NavBar';
 import React from "react";
 import ItemListContainer from "./components/ItemListContainer"
-
+import ItemDetailContainer from './components/ItemDetailContainer';
 function App() {
   /*  let imagen="vino01.png";
   let titulo="NIETO SENETINER";
@@ -15,12 +15,14 @@ function App() {
   return (
     <div className='container-fluid '>
       <NavBar />
-
-
      <hr /> 
-      <div className="col-md-3 offset-md-2">
+      <div className="col-md-3">
          <ItemListContainer />
       </div>
+      <div className='container'>
+       <ItemDetailContainer />
+      </div> 
+      
       {/*      <div className='row'>
         <div className="col-md-4 offset-md-2">
         <img src={producto.image} alt={producto.title} className="img-fluid" />

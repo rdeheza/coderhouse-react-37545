@@ -5,7 +5,10 @@ import "../estilos.css"
 const ItemList = ({datosProductos=[]}) => {
 
     return (
-        datosProductos.map(item=> <Item key={item.id} producto={item} />)     
+     <div className="containerCard">
+        { datosProductos.map(item=> <Item key={item.id} producto={item} />) }
+     </div>   
+           
     );
 }
 export default ItemList;

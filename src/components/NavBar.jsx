@@ -22,11 +22,12 @@ const NavBar = () => {
                 </li>
 
             </ul>
-            <ul className="nav">
+            {/* <button><CardWidget /></button> */}
+             <ul className="nav">
                 <li className="nav-item">
                     <a className="nav-bar brand" href="/"> <CardWidget /></a>
                 </li>
-            </ul>
+            </ul> 
         </div>
 
 
