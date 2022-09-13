@@ -12,13 +12,10 @@ const Agregar = () => {
   const Restar = () => {
     if (count>0)
     setCount(count-1 )
-  } 
-
-
-  
+  }  
     return (
         <div>
-            <div class="shadow-lg p-3 mb-5 bg-white rounded card-item ">
+            <div className="shadow-lg p-3 mb-5 bg-white rounded card-item ">
                 <div className="card text-center border-primary mb-3 card-item"  >
                     <img src={props.imagen} alt={props.nombre} className="img-fluid" width="200" />
                     <h1>{props.nombre}</h1>
@@ -26,18 +23,17 @@ const Agregar = () => {
                     <h4>Stock: {props.stock}</h4>
                     <div className="row">
                         <div className="col md-1">
-                           <button type="button" class="btn btn-success"  onClick={Agregar}>+</button>
+                           <button type="button" className="btn btn-success"  onClick={Agregar}>+</button>
                         </div>
                         <div className="col md-1">
                            <h5>{count}</h5>
                         </div>
                          <div className="col md-1">
-                            <button type="button" class="btn btn-danger" onClick={Restar}>-</button>
+                            <button type="button" className="btn btn-danger" onClick={Restar}>-</button>
                           </div>
-
                     </div>
                      <br />
-                    <button type="button" class="btn btn-primary">Agregar al Carro</button>
+                    <button type="button" className="btn btn-primary">Agregar al Carro</button>
                 </div>
             </div>
         </div>

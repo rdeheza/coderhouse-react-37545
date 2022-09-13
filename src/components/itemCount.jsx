@@ -13,7 +13,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
         setCount(count - 1)
     }
     return (
-        <div className="card text-center border-primary mb-3 card-item"  >
+        <div className="container-counter">
         <div className="container margin auto ">
             <h4>Stock : {stock}</h4>
             <br />
@@ -25,7 +25,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
                     <h5>{count}</h5>
                 </div>
                 <div className="col md-1">
-                    <button  disabled ={count<initial}  type="button" class="btn btn-danger" onClick={Restar}>-</button>
+                    <button  disabled ={count<initial}  type="button" className="btn btn-danger" onClick={Restar}>-</button>
                 </div>
 
             </div>
@@ -40,7 +40,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
                             onAdd(count)
                         }
                       }}
-                    type="button" class="btn btn-primary">Agregar al Carro</button>
+                    type="button" className="btn btn-primary">Agregar al Carro</button>
                 </div>
             </div>
             <br />

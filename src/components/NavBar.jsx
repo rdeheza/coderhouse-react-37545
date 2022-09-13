@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/images/logo.png"
 import "../estilos.css"
 import CardWidget from "../components/CardWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -9,19 +10,23 @@ const NavBar = () => {
             <ul className="nav me-auto">
 
                 <li className="nav-item">
-                    <a className="nav-link active color-link" aria-current="page" href="/"><img src={logo} width="35" alt="Roberto" /></a>
+                    <Link className="nav-link active " aria-current="page" to={"/"}><img src={logo} width="35" alt="Roberto" /></Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link color-link" href="/">Vinos</a>
+                    <Link className="nav-link " to={"/categoria/vino"}>Vinos</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link color-link" href="/">Bebidas blancas</a>
+                    <Link className="nav-link" to={"/categoria/blancas"}>Bebidas blancas</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link color-link" href="/">Cervezas</a>
+                    <Link className="nav-link" to={"/categoria/cerveza"}>Cervezas</Link>
                 </li>
 
             </ul>
+              
+
+
+
             {/* <button><CardWidget /></button> */}
              <ul className="nav">
                 <li className="nav-item">

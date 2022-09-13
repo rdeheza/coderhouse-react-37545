@@ -11,15 +11,17 @@ const ItemDetail = ({ item }) => {
             <div className="infoDetail">
                 <h2>{item.title}</h2>
                 <p>
-                Portillo es una colección de vinos desarrollados por 
-                Bodegas Salentein, la primera bodega establecida en el 
-                valle de Uco. Localizados en medio de sus viñedos a 4,000 
-                pies de altitud, la bodega trabaja sólo con la gravedad, 
-                con tres niveles que comienzan bajo tierra.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type 
+                specimen book. It has survived not only five centuries, but also the leap into
+                 electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                 with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                  with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
-                <h3>Precio: {item.price}.-</h3>
+                <h3>Precio:$ {item.price}.-</h3>
 
-                <ItemCount stock={10} initial={1} onAdd={onAdd}  />
+                <ItemCount stock={item.stock} initial={1} onAdd={onAdd}  />
             </div>
         </div>
     );
