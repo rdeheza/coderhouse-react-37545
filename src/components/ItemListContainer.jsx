@@ -29,7 +29,7 @@ const ItemListContainer = () => {
       });
       getProductos.then(res => setDatosProductos(res));
     }
-  },)
+  },[tipoBebida])
   return (
     <div>
       <div className="container fluid">

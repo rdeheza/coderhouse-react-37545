@@ -1,9 +1,11 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import ItemCount from '../components/ItemCount';
-
+import { Link } from 'react-router-dom';
 const ItemDetail = ({ item }) => {
+  const [goCart,SetGoCart]=useState(false)
+  
     const onAdd=(contador)=>{
-        alert(`total a comprar: ${contador}`)
+        SetGoCart(true)
     }
     return (
         <div className="detail">
@@ -20,9 +22,13 @@ const ItemDetail = ({ item }) => {
                   with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
                 <h3>Precio:$ {item.price}.-</h3>
-
-                <ItemCount stock={item.stock} initial={1} onAdd={onAdd}  />
-            </div>
+                {
+                 goCart ?
+                  <Link to={'/cart'}>Finalizar la compra</Link> 
+                 :<ItemCount stock={item.stock} initial={1} onAdd={onAdd}  />
+                }
+                  
+            </div> 
         </div>
     );
 };
