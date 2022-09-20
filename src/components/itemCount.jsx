@@ -19,7 +19,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
             <br />
             <div className="row">
                 <div className="col md-1 ">
-                    <button type="button" class="btn btn-success" onClick={Agregar}>+</button>
+                    <button type="button" className="btn btn-success" onClick={Agregar}>+</button>
                 </div>
                 <div className="col md-1">
                     <h5>{count}</h5>

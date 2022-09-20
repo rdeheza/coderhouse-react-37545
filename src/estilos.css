@@ -1,5 +1,5 @@
-.cabecera {
-  background-color: darkslategrey;
+.cabecera2 {
+  background-image: url("./assets/images/fondoRojo.jpg");
 }
 h1 {
   font-family: "Times New Roman", Times, serif;
@@ -10,7 +10,14 @@ h3 {
   text-align: center;
 }
 .color-link {
-  color: aliceblue;
+  color: chocolate;
   font-family: "Times New Roman", Times, serif;
   font-size: 120%;
+}
+.homePage {
+  background-image: url("/src/assets/images/fondovinos.jpg");
+  background-size: cover;
+  padding-bottom: 290px;
+
+
 }

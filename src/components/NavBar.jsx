@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logonuevo.png"
 import "../estilos.css"
 import CardWidget from "../components/CardWidget";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ const NavBar = () => {
             <ul className="nav me-auto">
 
                 <li className="nav-item">
-                    <Link className="nav-link active " aria-current="page" to={"/"}><img src={logo} width="35" alt="Roberto" /></Link>
+                    <Link className="nav-link active " aria-current="page" to={"/"}><img src={logo} width="95" alt="Roberto" /></Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link " to={"/categoria/vino"}>Vinos</Link>
