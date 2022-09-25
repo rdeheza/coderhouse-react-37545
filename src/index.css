@@ -27,8 +27,20 @@
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
+.card2 {
+  box-shadow: 3px 3px 15px 1px rgb(158, 158, 158);
+  margin: 90px 70px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
 .containerCard {
   display: inline-flex;
+
+  width: 1100px;
+}
+.containerCardCart {
+
 
   width: 1100px;
 }
@@ -54,4 +66,12 @@ Link{
   font-weight: bold;
   font-style: unset;
 
+}
+h1{
+   color: red;
+   font-size: 80px;
+}
+.linkclase{
+  color:blueviolet;
+  font-size: 30px;
 }

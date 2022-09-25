@@ -27,7 +27,10 @@ const ItemDetail = ({ item }) => {
                 <h3>Precio:$ {item.price}.-</h3>
                 {
                  goCart ?
-                  <Link to={'/cart'}>Finalizar la compra</Link> 
+                 <button >
+                    <Link to={'/cart'}>Finalizar la compra</Link> 
+                 </button>
+                 
                  :<ItemCount stock={item.stock} initial={1} onAdd={onAdd}  />
                 }
                   
