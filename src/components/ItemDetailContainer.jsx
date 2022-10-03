@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
             }); */
     }, );
     return (
-        <div className='card' style={{ minHeight: '70vh' }}>
+        <div className='card3' style={{ minHeight: '70vh' }}>
             <ItemDetail item={item} />
         </div>
     );

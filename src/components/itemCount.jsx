@@ -16,10 +16,9 @@ const ItemCount = ({stock,initial,onAdd}) => {
         <div className="container-counter">
         <div className="container margin auto ">
             <h4>Stock : {stock}</h4>
-            <br />
             <div className="row">
                 <div className="col md-1 ">
-                    <button type="button" className="btn btn-success" onClick={Agregar}>+</button>
+                    <button type="button" className="btn btn-success " onClick={Agregar}>+</button>
                 </div>
                 <div className="col md-1">
                     <h5>{count}</h5>
@@ -27,9 +26,8 @@ const ItemCount = ({stock,initial,onAdd}) => {
                 <div className="col md-1">
                     <button  disabled ={count<initial}  type="button" className="btn btn-danger" onClick={Restar}>-</button>
                 </div>
-
+            
             </div>
-
             <br />
             <div className="row">
                 <div className="col md-6">
@@ -43,7 +41,6 @@ const ItemCount = ({stock,initial,onAdd}) => {
                     type="button" className="btn btn-primary">Agregar al Carro</button>
                 </div>
             </div>
-            <br />
         </div>
         </div>
 

@@ -17,7 +17,8 @@ h3 {
 .homePage {
   background-image: url("/src/assets/images/fondovinos.jpg");
   background-size: cover;
-  padding-bottom: 290px;
+  padding-bottom: 30%;
+
 
 
 }

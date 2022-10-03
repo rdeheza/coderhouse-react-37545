@@ -1,6 +1,7 @@
 import React  from "react";
  import carro from "../assets/images/carrito.png"
  import { useCartContext } from '../context/CartContext';
+ import "../index.css"
 
 import "../estilos.css" 
 const CardWidget = () => {

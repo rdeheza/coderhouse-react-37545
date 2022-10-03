@@ -17,24 +17,50 @@
   align-items: flex-start;
   padding: 20px;
 }
-.infoDetail {
-  width: 60%;
-}
+
 .card {
-  box-shadow: 3px 3px 15px 1px rgb(158, 158, 158);
-  margin: 20px 30px;
-  border-radius: 10px;
+  box-shadow: 5px 5px 15px 10px rgb(155, 13, 84);
+  margin: 10px 30px;
+  border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 .card2 {
   
   background-color: white;
-  margin: 20px 290px;
-  border-radius: 10px;
+  box-shadow: 5px 5px 15px 10px rgb(26, 27, 114);
+  margin: 10px 430px;
+  border-radius: 20px;
   text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  /* text-decoration: none;
+  transition: all 0.3s ease-in-out; */
+  padding: 10px;
+}
+.card3 {
+  
+  background-color: white;
+  box-shadow: 5px 5px 15px 10px rgb(26, 27, 114);
+  margin: 10px 190px 180px 190px;
+  
+  border-radius: 40px;
+  text-align: center;
+ width: 50%;
+ height: 30rem;
+
+  /* text-decoration: none;
+  transition: all 0.3s ease-in-out; */
+  padding: 50px;
+}
+.card4 {
+  text-align: center;
+  align-items: baseline;
+  background-color: white;
+  box-shadow: 5px 5px 15px 10px rgb(26, 27, 114);
+  margin: 1px 400px;
+  border-radius: 50px;
+  text-align: center;
+  /* text-decoration: none;
+  transition: all 0.3s ease-in-out; */
   padding: 10px;
 }
 .containerCard {
@@ -74,7 +100,15 @@ h1{
    color: red;
    font-size: 80px;
 }
+input{
+  text-align: center;
+}
 .linkclase{
   color:blueviolet;
   font-size: 40px;
+}
+span{
+  color: blue;
+  font-size: 90%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
