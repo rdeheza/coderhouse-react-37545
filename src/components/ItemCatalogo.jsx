@@ -1,18 +1,17 @@
-import React , { useState }from "react";
-//import carro from "../assets/images/carrito.png"
+import React, { useState } from "react";
 import "../estilos.css"
 
 const ItemCatalogo = (props) => {
-const [ count, setCount ] = useState(0)
+    const [count, setCount] = useState(0)
 
-const Agregar = () => {
-    if (count<props.stock)
-        setCount(count+1 )
-  } 
-  const Restar = () => {
-    if (count>0)
-    setCount(count-1 )
-  }  
+    const Agregar = () => {
+        if (count < props.stock)
+            setCount(count + 1)
+    }
+    const Restar = () => {
+        if (count > 0)
+            setCount(count - 1)
+    }
     return (
         <div>
             <div className="shadow-lg p-3 mb-5 bg-white rounded card-item ">
@@ -23,16 +22,16 @@ const Agregar = () => {
                     <h4>Stock: {props.stock}</h4>
                     <div className="row">
                         <div className="col md-1">
-                           <button type="button" className="btn btn-success"  onClick={Agregar}>+</button>
+                            <button type="button" className="btn btn-success" onClick={Agregar}>+</button>
                         </div>
                         <div className="col md-1">
-                           <h5>{count}</h5>
+                            <h5>{count}</h5>
                         </div>
-                         <div className="col md-1">
+                        <div className="col md-1">
                             <button type="button" className="btn btn-danger" onClick={Restar}>-</button>
-                          </div>
+                        </div>
                     </div>
-                     <br />
+                    <br />
                     <button type="button" className="btn btn-primary">Agregar al Carro</button>
                 </div>
             </div>

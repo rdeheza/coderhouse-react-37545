@@ -11,14 +11,14 @@ function App() {
   return (
     <div  className='homePage'>     
       <BrowserRouter>   
-      
+  
       <CartProvider> 
       <NavBar/>
         <Routes>
           <Route exact path="/" element={<ItemListContainer />} />
           <Route exact path="/categoria/:tipoBebida" element={<ItemListContainer />} />
           <Route exact path="/detalle/:idDetalle" element={<ItemDetailContainer />} />
-          <Route exact path="/cart" element={<Cart/>} />
+          <Route exact path="/Cart" element={<Cart/>} />
           <Route exact path="/Checkout" element={<Checkout/>} />
         </Routes>
   

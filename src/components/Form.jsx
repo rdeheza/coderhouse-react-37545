@@ -2,9 +2,8 @@ import { addDoc, collection, getFirestore, serverTimestamp } from 'firebase/fire
 import React from 'react';
 import { useState } from 'react';
 import { useCartContext } from '../context/CartContext';
-import "../index.css"
-/* import { CartContext } from '../context/CartContext'; */
-/* import { db } from '../firebaseConfig'; */
+import "../estilos.css" ;
+
 
 const Form = ({ handleId }) => {
     const [name, setName] = useState('');
@@ -37,40 +36,7 @@ const Form = ({ handleId }) => {
     const handleEmail = (e) => setEmail(e.target.value);
 
     return (
-        /*         <form action="" onSubmit={handleSubmit} className="grid2">
-                 <div class="mb-6">
         
-                    <input
-                        type="text"
-                        name="nombre"
-                        placeholder="Nombre Completo"
-                        value={name}
-                        onChange={handleName}
-                        required
-                    />
-                    <br />
-                    <br />
-                    <input
-                        type="number"
-                        name="telefono"
-                        placeholder="Telefono"
-                        value={phone}
-                        onChange={handlePhone}
-                    />
-                    <br />
-                    <br />
-                     <input
-                        type="text"
-                        name="Email"
-                        placeholder="Email"
-                        value={email}
-                        onChange={handleEmail}
-                    />
-                    <br />
-                    <br />
-                    <button>Enviar</button>
-                    </div>
-                </form> */
         <form action="" onSubmit={handleSubmit} >
 
           <div className="card4">  
@@ -85,7 +51,7 @@ const Form = ({ handleId }) => {
                 <input type="text" className="form-control" value={phone} onChange={handlePhone} placeholder="Telefono" />
             </div>
                 <div className="form-group col-md-12">
-                    <label for="inputEmail4">Email</label>
+                    <label for="inputEmail">Email</label>
                     <input type="email" className="form-control" onChange={handleEmail} value={email} placeholder="Email" />
                 </div>
             

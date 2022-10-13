@@ -6,8 +6,8 @@ import { useCartContext } from '../context/CartContext';
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-    const {totalProd}=useCartContext();
-    let total= totalProd();
+    const { totalProd } = useCartContext();
+    let total = totalProd();
     return (
         <div className='container-fluid cabecera  d-flex flex-wrap'>
             <ul className="nav me-auto">
@@ -26,40 +26,13 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                     {
-                         total >0 ?
-                         <Link className="nav-link" to={"/Cart"}> <CardWidget/></Link>
-                        :<p></p> 
-
+                        total > 0 ?
+                            <Link className="nav-link" to={"/Cart"}> <CardWidget /></Link>
+                            : <p></p>
                     }
-                      
-                    
-                    
                 </li>
-
             </ul>
-              
-
-
-
-            {/* <button><CardWidget /></button> */}
-{/*              <ul className="nav">
-                <li className="nav-item">
-                    {
-                         total >0 ?
-                         <a className="nav-bar brand" href="/cart"> <CardWidget/></a>
-                        :<p></p> 
-
-                    }
-                      
-                    
-                    
-                </li>
-            </ul>  */}
         </div>
-
-
     );
-
-
 }
 export default NavBar;

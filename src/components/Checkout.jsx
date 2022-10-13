@@ -5,30 +5,28 @@ import { Link } from "react-router-dom";
 
 const Checkout = () => {
     const [orderId, setOrderId] = useState('');
-
     const handleId = (numeroDeOrden) => {
         setOrderId(numeroDeOrden);
     };
 
     if (orderId) {
         return (
-            <div className="card4">  
-               <h4>
-               Gracias por tu compra, te dejamos el número de seguimiento:{' '}
-                {orderId}
-               </h4>
-               <button >
-                    <Link to={'/'}>Volver al inicio</Link> 
-                 </button>
+            <div className="card4">
+            
+                <span className="badge rounded-pill text-bg-danger  spanclass2">Gracias por tu compra, te dejamos  </span>
+                <span className="badge rounded-pill text-bg-danger  spanclass2"> el número de seguimiento:{' '}  {orderId}</span>
+                <br />
+                <br />
+                <button >
+                    <Link to={'/'}>Volver al inicio</Link>
+                </button>
             </div>
         );
     }
-
     return (
         <div>
             <Form handleId={handleId} />
         </div>
     );
 };
-
 export default Checkout;
